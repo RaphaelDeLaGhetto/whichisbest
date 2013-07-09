@@ -1,13 +1,24 @@
 'use strict';
 
-angular.module('whichIsBestApp', [])
+angular.module('whichIsBestApp', ['ngResource', 'ui.bootstrap'])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/which_is_best.html',
+        controller: 'PickCtrl'
       })
+      .when('/this_is_best', {
+		templateUrl: 'views/this_is_best.html', 
+		controller: 'BestCtrl'
+	  })
+	  .when('/choice/:pickId', {
+		templateUrl: 'views/choice.html', 
+		controller: 'ChoiceCtrl'
+		})
       .otherwise({
         redirectTo: '/'
       });
   }]);
+
+
+

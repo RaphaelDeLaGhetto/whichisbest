@@ -25,16 +25,32 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Which is best?</a>
+			<ul class="nav">
+				<li><a href="http://www.facebook.com/bourjois.ca" target="_blank">Mademoiselle Bourjois</a></li>
+				<li><a href="https://www.facebook.com/pages/Wide-Angle-Photo/122494691202654" target="_blank">Wide Angle Photo</a></li>
+			</ul>	
+	  	</div>
+  	</div>
+    <div class="container-fluid" ng-view></div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
     <script src="components/angular-cookies/angular-cookies.js"></script>
     <script src="components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/choice.js"></script>
+    <script src="scripts/controllers/pick.js"></script>
+    <script src="scripts/controllers/best.js"></script>
+    <script src="scripts/directives/pick.js"></script>
+    <script src="scripts/services/pick.js"></script>
+    <script src="scripts/services/best.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -1,0 +1,25 @@
+<div class="row-fluid"> 
+	<div class="span6"> 
+		<form ng-submit="chooseLeft()"> 
+			<input class="btn-primary" id="left" type="submit" value="This one's best" />
+        </form>
+    </div>
+    <div class="span6">
+    	<form ng-submit="chooseRight()">
+			<input class="btn-primary" id="right" type="submit" value="No, this one's best" /> 
+		</form> 
+	</div> 
+</div> 
+<div class="row-fluid">
+	<div class="span6"> 
+		<pick id="left" path="{{left.imageUrl}}" pickid="{{left.id}}"></pick> 
+	</div> 
+	<div class="span6"> 
+		<pick id="right" path="{{right.imageUrl}}" pickid="{{right.id}}"></pick> 
+	</div>
+</div>  
+<div class="row-fluid">
+	<div class="span12">
+		<a href="https://github.com/RaphaelDeLaGhetto/whichisbest" target="_blank">GitHub</a>
+	</div>
+</div> 
